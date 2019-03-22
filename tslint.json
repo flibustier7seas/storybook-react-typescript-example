@@ -1,0 +1,58 @@
+{
+    "defaultSeverity": "warn",
+    "extends": "tslint:recommended",
+    "rules": {
+        "no-empty-interface": {
+            "severity": "warning"
+        },
+        "semicolon": [true, "always", "ignore-bound-class-methods"],
+        "only-arrow-functions": false,
+
+        // custom settings
+        "array-type": [true, "array"],
+        "arrow-parens": false,
+        "interface-name": [false],
+        "interface-over-type-literal": false,
+        "max-classes-per-file": false,
+        "no-any": true,
+        "no-bitwise": false,
+        "no-inferrable-types": [true, "ignore-params"],
+        "no-shadowed-variable": false,
+        "no-unused-variable": [true, { "ignore-pattern": "^_" }],
+        "no-var-requires": false,
+        "object-literal-sort-keys": false,
+        "one-line": [true, "check-open-brace", "check-whitespace"],
+        "ordered-imports": {
+            "severity": "warning",
+            "options": {
+                "import-sources-order": "any",
+                "named-imports-order": "lowercase-last"
+            }
+        },
+        "prefer-const": true,
+        "switch-default": false,
+        "variable-name": [
+            true,
+            "ban-keywords",
+            "check-format",
+            "allow-leading-underscore",
+            "allow-pascal-case"
+        ],
+        "whitespace": [
+            true,
+            "check-branch",
+            "check-decl",
+            "check-operator",
+            "check-separator",
+            "check-type"
+        ]
+    },
+    "jsRules": {
+        // disabled to provide quick fix
+        "max-line-length": [false],
+        // custom settings
+        "no-shadowed-variable": false,
+        "object-literal-sort-keys": false,
+        "prefer-const": true
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "files.exclude": {
+        // defaults
+        "**/.git": true,
+        "**/.DS_Store": true,
+
+        // typings-for-css-modules-loader
+        "**/*.css.d.ts": true,
+        "**/*.scss.d.ts": true,
+    },
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 2000,
+
+    // tslint plugin
+    "tslint.enable": true,
+    "tslint.jsEnable": true,
+    "typescript.tsdk": "node_modules\\typescript\\lib",
+
+    // prettier часть настроек берёт из .editorconfig
+    "prettier.printWidth": 100,
+    "prettier.trailingComma": "all",
+    "prettier.semi": true
+}

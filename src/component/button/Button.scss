@@ -1,0 +1,9 @@
+.button {
+    display: inline-block;
+    cursor: pointer;
+    border: solid 1px blue;
+
+    &--disabled {
+        border-color: gray;
+    }
+}

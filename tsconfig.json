@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "noImplicitAny": false,
+        "target": "es6",
+        "jsx": "react",
+        "types": ["webpack-env", "node", "jest", "storybook-addon-jsx"],
+        // module resolution
+        "baseUrl": "./src/",
+        "moduleResolution": "node",
+        "traceResolution": true,
+        "forceConsistentCasingInFileNames": false,
+
+        // module processing
+        "module": "es2015",
+
+        // validation rules
+        "noUnusedLocals": true,
+        "noUnusedParameters": true
+    },
+    "include": ["src/index.tsx", "src/**/*.spec.ts"]
+}
